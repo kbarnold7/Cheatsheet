@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &amp; CSS Cheatsheet</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="top">HTML Forms &amp; CSS Display Cheatsheet</h1>
+    </header>
+    <main>
+        <section>
+            <h2>HTML Forms</h2>
+            <div>
+                <h3>Form Tags</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--row 1-->
+                        <tr>
+                            <td scope="row" class="name form">&lt;form&gt;</td>
+                            <td scope="row">Represents section of the document containing control for information submission</td>
+                            <td scope="row" class="form">&lt;form&gt;&lt;&sol;form&gt;</td>
+                        </tr>
+                        <!--row 2-->
+                        <tr>
+                            <td scope="row" class="name fieldset">&lt;fieldset&gt;</td>
+                            <td scope="row">Groups controls and labels within the form element</td>
+                            <td scope="row"><span class="form">&lt;form&gt;</span><br><span class="fieldset">&lt;fieldset&gt;&lt;&sol;fieldset&gt;</span><br><span class="form">&lt;&sol;form&gt;</span></td>
+                        </tr>
+                        <!--row 3-->
+                        <tr>
+                            <td scope="row" class="name legend">&lt;legend&gt;</td>
+                            <td scope="row">Gives a caption for the fieldset element</td>
+                            <td scope="row"><span class="fieldset">&lt;fieldset&gt;</span><br><span class="legend">&lt;legend&gt;</span>Select One:<span class="legend">&lt;&sol;legend&gt;</span><br><span class="fieldset">&lt;&sol;fieldset&gt;</span></td>
+                        </tr>
+                        <!--row 4-->
+                        <tr>
+                            <td scope="row" class="name label">&lt;label&gt;</td>
+                            <td scope="row">Gives a caption for an item on a form that is within the fieldset</td>
+                            <td scope="row"><span class="fieldset">&lt;fieldset&gt;</span><br><span class="label">&lt;label&gt;</span>Enter Your Name<span class="label">&lt;&sol;label&gt;</span><span class="fieldset">&lt;&sol;fieldset&gt;</span></td>
+                        </tr>
+                        <!--row 5-->
+                        <tr>
+                            <td scope="row" class="name input">&lt;input&gt;</td>
+                            <td scope="row">Creates interactive controls like a textbox or selection bubble</td>
+                            <td scope="row"><span class="fieldset">&lt;fieldset&gt;</span><br><span class="label">&lt;label&gt;</span>Enter Your Name<span class="label">&lt;&sol;label&gt;</span> <span class="input">&lt;input &sol;&gt;</span><br><span class="fieldset">&lt;&sol;fieldset&gt;</span></td>
+                        </tr>
+                        <!--row 6-->
+                        <tr>
+                            <td scope="row" class="name select">&lt;select&gt;</td>
+                            <td scope="row">Creates a dropdown menu</td>
+                            <td scope="row"><span class="fieldset">&lt;fieldset&gt;</span><br><span class="label">&lt;label&gt;</span>Choose One:<span class="label">&lt;&sol;label&gt;</span><br><span class="select">&lt;select&gt;&lt;&sol;select&gt;</span><br><span class="fieldset">&lt;&sol;fieldset&gt;</span></td>
+                        </tr>
+                        <!--row 7-->
+                        <tr>
+                            <td scope="row" class="name option">&lt;option&gt;</td>
+                            <td scope="row">Defines content within the select element</td>
+                            <td scope="row"><span class="select">&lt;select&gt;</span><br><span class="option">&lt;option&gt;&lt;&sol;option&gt;</span><br><span class="select">&lt;&sol;select&gt;</span></td>
+                        </tr>
+                        <!--row 8-->
+                        <tr>
+                            <td scope="row" class="name textarea">&lt;textarea&gt;</td>
+                            <td scope="row">Creates a freeform area for text to be entered</td>
+                            <td scope="row"><span class="fieldset">&lt;fieldset&gt;</span><br><span class="label">&lt;label&gt;&lt;&sol;label&gt;</span><br><span class="textarea">&lt;textarea&gt;&lt;&sol;textarea&gt;</span><br><span class="fieldset">&lt;&sol;fieldset&gt;</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr scope="row">
+                            <td scope="row" class="name note">Things to Note:</td>
+                            <td scope="row" colspan="2">
+                                <ul>
+                                    <li><span class="label">&lt;label&gt;</span> and <span class="input">&lt;input&gt;</span> always go together and are linked by for and id attributes.</li>
+                                    <li><span class="input">&lt;input&gt;</span> is defined by type.</li>
+                                    <li class="bottom-li"><span class="option">&lt;option&gt;</span> has to have a specified value.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3 class="table2-header">Form Attributes</h3>
+                <table>
+                    <thead>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                    </thead>
+                    <tbody>
+                        <!--row 1-->
+                        <tr>
+                            <td scope="row" class="name action">action</td>
+                            <td scope="row">Tells browsers the URL or relative path that submissions are sent to</td>
+                            <td scope="row"><span class="form">&lt;form</span> <span class="action">action</span>=""<span class="form">&gt;&lt;&sol;form&gt;</span></td>
+                        </tr>
+                        <!--row 2-->
+                        <tr>
+                            <td scope="row" class="name method">method</td>
+                            <td scope="row">Defines how data is sent</td>
+                            <td scope="row"><span class="form">&lt;form</span> <span class="action">action</span>="" <span class="method">method</span>="get"<span class="form">&gt;&lt;&sol;form&gt;</span></td>
+                        </tr>
+                        <!--row 3-->
+                        <tr>
+                            <td scope="row" class="name type">type</td>
+                            <td scope="row">Tells browser what date to expect &lpar;i.e. text, checkbox, radio, email, file, etc.&rpar;</td>
+                            <td scope="row"><span class="input">&lt;input</span> <span class="type">type</span>="text" <span class="input">&sol;&gt;</span></td>
+                        </tr>
+                        <!--row 4-->
+                        <tr>
+                            <td scope="row" class="name radio">radio</td>
+                            <td scope="row">Generally used for describing radio group options</td>
+                            <td scope="row"><span class="input">&lt;input</span> <span class="type">type</span>="<span class="radio">radio</span>" <span class="input">&sol;&gt;</span></td>
+                        </tr>
+                        <!--row 5-->
+                        <tr>
+                            <td scope="row" class="name checked">checked</td>
+                            <td scope="row">Auto selects an option</td>
+                            <td scope="row"><span class="input">&lt;input</span> <span class="type">type</span>="<span class="radio">radio</span>" <span class="checked">checked</span> <span class="input">&sol;&gt;</span></td>
+                        </tr>
+                        <!--row 6-->
+                        <tr>
+                            <td scope="row" class="name pattern">pattern</td>
+                            <td scope="row">Defines inputs for text, tel, email, url, password, and search types</td>
+                            <td scope="row"><span class="input">&lt;input</span> <span class="type">type</span>="password" <span class="pattern">pattern</span>="&lbrack;a-z0-5&rbrack;&lbrace;8,&rbrace; <span class="input">&sol;&gt;</span></td>
+                        </tr>
+                        <!--row 7-->
+                        <tr>
+                            <td scope="row" class="name placeholder">placeholder</td>
+                            <td scope="row">Can be used with any input to display holder text</td>
+                            <td scope="row"><span class="input">&lt;input</span> <span class="type">type</span>="text" <span class="placeholder">placeholder</span>="placeholder text here" <span class="input">&sol;&gt;</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr scope="row">
+                            <td scope="row" class="name note">Things to Note:</td>
+                            <td scope="row" colspan="2">
+                                <ul>
+                                    <li>Most common method values are GET &rpar;sends back a server response at submission&lpar; and POST &lpar;sends submission to server and asks for a response back&rpar;.</li>
+                                    <li>Types can include submit, text, checkbox, radio, file, password, email, etc.</li>
+                                    <li class="bottom-li">Only one radio input can be selected as long as they're connected by the same name and value.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section id="css">
+            <h2 class="css-head">CSS Display & Postioning</h2>
+            <table>
+                <thead>
+                    <th scope="col">Property</th>
+                    <th scope="col">Description</th>
+                </thead>
+                <tbody>
+                    <!--row 1-->
+                    <tr>
+                        <td scope="row" class="name">position: relative</td>
+                        <td scope="row">Places elements relative to thier default posisitions</td>
+                    </tr>
+                    <!--row 2-->
+                    <tr>
+                        <td scope="row" class="name">position: absolute</td>
+                        <td scope="row">Places elements relative to thier closest parent</td>
+                    </tr>
+                    <!--row 3-->
+                    <tr>
+                        <td scope="row" class="name">position: fixed</td>
+                        <td scope="row">Places an element to a certain point on the page that does not change when scrolling</td>
+                    </tr>
+                    <!--row 4-->
+                    <tr>
+                        <td scope="row" class="name">position: sticky</td>
+                        <td scope="row">Keeps element placed in its normal flow until the page hits a certain point, then it becomes fixed</td>
+                    </tr>
+                    <!--row 5-->
+                    <tr>
+                        <td scope="row" class="name">display: inline</td>
+                        <td scope="row">Makes elements next to each other</td>
+                    </tr>
+                    <!--row 6-->
+                    <tr>
+                        <td scope="row" class="name">display: block</td>
+                        <td scope="row">Makes an element fill the entire width of the screen or a set width</td>
+                    </tr>
+                    <!--row 7-->
+                    <tr>
+                        <td scope="row" class="name">display: inline-block</td>
+                        <td scope="row">Combines features so that elements appear next to each other but can also have specfied dimensions</td>
+                    </tr>
+                    <!--row 8-->
+                    <tr>
+                        <td scope="row" class="name">z-index</td>
+                        <td scope="row">Specifies the depth &rpar;z-axis&lpar; of the element on the screen to the user, as well as if the element uses local stacking.</td>
+                    </tr>
+                    <!--row 9-->
+                    <tr>
+                        <td scope="row" class="name">float</td>
+                        <td scope="row">Places element to the left or right of it's container<br> &lpar;Commonly used to wrap text around an image&rpar;</td>
+                    </tr>
+                    <!--row 10-->
+                    <tr>
+                        <td scope="row" class="name">clear</td>
+                        <td scope="row">Determines how elements behave when they bump into each other.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr scope="row">
+                        <td scope="row" class="name note">Things to Note:</td>
+                        <td scope="row">
+                            <ul>
+                                <li>Positions are specifed by using the top, bottom, left, and right offset properties and does not affect other elements.</li>
+                                <li>Absolute position can overlap.</li>
+                                <li>Elements like headings, paragraphs, divs, and footers are block level by default.</li>
+                                <li>Z-index is specified by positive or negative integers.</li>
+                                <li class="bottom-li">Clear values specify where elements will not touch and include left, right, both, or none.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h4><a href="#top">Back to top</a></h4>
+    </footer>
+</body>
+</html>

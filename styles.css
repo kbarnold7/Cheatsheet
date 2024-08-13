@@ -1,0 +1,186 @@
+:root {
+    --name-color1: #26F3DD;
+    --name-color2: #5CEF72;
+    --name-color3: #F29BC4;
+    --name-color4: #F27405;
+    --name-color5: #c14df2;
+    --name-color6: #F20C36;
+    --name-color7: #F2E30C;
+    --name-color8: #598bee;
+    --name-color9: #f242c0;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #21222C;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    padding-bottom: 2em;
+    width: 80%;
+    min-width: 550px;
+}
+
+header {
+    text-align: center;
+    font-family: Karla, serif;
+    font-size: 1.2rem;
+}
+
+main {
+    font-family: Inconsolata, monospace;
+}
+
+section {
+    background-color: #353744;
+    border: 1px solid #353744;
+}
+
+section:last-of-type {
+    padding-bottom: 2em;
+}
+
+h2 {
+    margin-bottom: 0;
+    text-align: center;
+    font-family: Karla, serif;
+    font-size: 1.8em;
+}
+
+.css-head {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.table2-header {
+    margin-top: 2em;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    min-width: 500px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #292b35;
+}
+
+td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+tfoot {
+    background-color: #393c48;
+}
+
+.name {
+    text-align: center;
+}
+
+.note {
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 0.5em;
+    list-style: none;
+}
+
+li {
+    padding-bottom: 1em;
+}
+
+.bottom-li {
+    padding-bottom: 0;
+}
+
+.form {
+    color: var(--name-color1);
+}
+
+.fieldset {
+    color: var(--name-color2);
+}
+
+.legend {
+    color: var(--name-color3);
+}
+
+.label {
+    color: var(--name-color4);
+}
+
+.input {
+    color: var(--name-color5);
+}
+
+.select {
+    color: var(--name-color6);
+}
+
+.option {
+    color: var(--name-color7);
+}
+
+.textarea {
+    color: var(--name-color8);
+}
+
+.action {
+    color: var(--name-color2);
+}
+
+.method {
+    color: var(--name-color3);
+}
+
+.type {
+    color: var(--name-color4);
+}
+
+.radio {
+    color: var(--name-color6);
+}
+
+.checked {
+    color: var(--name-color7);
+}
+
+.pattern {
+    color: var(--name-color8);
+}
+
+.placeholder {
+    color: var(--name-color9)
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: Karla, serif;
+    font-size: 1rem;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}
